@@ -1,0 +1,21 @@
+	int _students;
+	cout << "welcome to the UNILIA Sign up..." << endl;
+	cout << "How many students are signing today: ";
+	cin >> _students;
+	string infor[_students][2];
+	    	int i = 0, z = 0;
+	for (i = 0;i < _students ;i++){
+		cout << "Name: " ;
+		cin >> infor[i][z];
+		
+		cout << "surname: ";
+		cin >> infor[i][z+1];
+	}
+
+	cout << "Name      " << "     Surname";
+	for (int row = 0;row < _students ;row++){
+		cout <<endl;
+		for (int colum = 0;colum < 2;colum++){
+		cout << infor[row][colum]  << "         ";
+	}
+}
